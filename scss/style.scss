@@ -1,0 +1,100 @@
+$red:#A52C39;
+$blue:#241F71;
+$navy:#084875;
+$salmon:#D46465;
+$orange:#FA7C55;
+
+$white:#fff;
+$black:#222;
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,600&display=swap');
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100%;
+    font-weight: normal;
+    line-height: 1.75;
+    color: $white;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: $white;
+}
+
+nav {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    a {
+        color: $black;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin: 15px;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: $black;
+        }
+    }
+}
+
+.wrap {
+    max-width: 1000px;
+    padding: 160px 20px;
+    margin: 0 auto;
+}
+
+section:nth-of-type(1n) {
+    background-color: $red;
+}
+
+section:nth-of-type(2n) {
+    background-color: $blue;
+}
+
+section:nth-of-type(3n) {
+    background-color: $navy;
+}
+
+section:nth-of-type(4n) {
+    background-color: $salmon;
+}
+
+section:nth-of-type(5n) {
+    background-color: $orange;
+}
+
+section:nth-of-type(6n) {
+    background-color: $red;
+}
+
+section:nth-of-type(7n) {
+    background-color: $blue;
+}
